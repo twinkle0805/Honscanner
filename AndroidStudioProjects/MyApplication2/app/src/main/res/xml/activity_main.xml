@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <net.skyscanner.backpack.card.BpkCardView
+            android:id="@+id/flightInfoCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cornerStyle="large"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <net.skyscanner.backpack.text.BpkText
+                    style="@style/bpkTextHeading1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Flight Number: AB1234" />
+
+                <net.skyscanner.backpack.text.BpkText
+                    style="@style/bpkTextHeading1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Departure: JFK - 08:30 AM" />
+
+                <net.skyscanner.backpack.text.BpkText
+                    style="@style/bpkTextHeading1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Arrival: LHR - 10:15 PM" />
+
+            </LinearLayout>
+
+        </net.skyscanner.backpack.card.BpkCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</PreferenceScreen>
